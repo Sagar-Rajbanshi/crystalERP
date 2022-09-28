@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="This is my test project(using HTML, CSS, vanila JS) for crystal solution IT company">
+    <meta name="keywords" content="Nepal Collage Of Management, Collage, Best Collage, Management">
+    <meta name="Author" content="Sagar Rajbanshi">
+    <!-- for proper responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title></title>
+    <!-- custom css -->
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/responsive.css">
+    <!-- custom JS -->
+    <script defer src="./JS/script.js"></script>        
+    <!--for only for icon bootstrap icon CDN link  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- one excuse-animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <div class="container-xxl" style="position: relative; overflow: hidden;">
+        <!-- first div  -->
+        <div class="min-100vh" style="position: relative;">
+            <!-- start header -->
+            <div class="header U-pad">
+                <header>
+                    <!-- left section -->
+                    <section class="header-left-section cc">
+                        <img class="logo" src="./IMG/WhatsApp Image 2022-09-27 at 9.07.47 AM (1).jpeg" alt="logo">
+                        <h1>Nepal Collage Of Management</h1>
+                    </section>
+                    <!-- right section -->
+                    <section class="header-right-section cc" style="align-items: flex-start;">                    
+                        <p>About Us | Contact</p>
+                    </section>
+                </header>
+                <!-- start navbar -->
+                <div class="nav-bar shadow">
+                    <nav data-aos="fade-in">
+                        <ul>
+                            <li><a onclick="color(this)" href="#Home" class="active">Home</a></li>
+                            <li style="position: relative;">
+                                <a href="#Programs" class="cc p" onclick="drop(this)">Programs <span class="down-arrow p">&#8250;</span></a>
+                                <!-- drop box -->
+                                <div class="drop-box window-show-hide shadow d-none p" style="z-index: 1;">
+                                    <a href="#" onclick="BachMas(this)" class="cc p">Bachelors <span class="right-arrow p"> &#8250;</span></a>
+                                <!-- drop box -->
+                                    <div class="p window-show-hide js-display-none drop-margin bachelors-drop-box shadow drop-box cc d-none">
+                                        <a class="p" href="#">B.Sc. in ICE</a>
+                                        <a class="p" href="#">B.Sc. in CSKE</a>
+                                        <a class="p" href="#">B.Sc. in Computer Engineering</a>
+                                    </div>
+                                    <a href="#" onclick="BachMas(this)" class="cc p">Masters <span class="right-arrow p"> &#8250;</span></a>
+                                <!-- drop box -->
+                                    <div class="window-show-hide js-display-none drop-margin bachelors-drop-box masters-drop-box shadow drop-box cc d-none p">
+                                        <a class="p" href="#">M.Sc. in ICE</a>
+                                        <a class="p" href="#">M.Sc. in CSKE</a>
+                                        <a class="p" href="#">M.Sc. in Computer Engineering</a>
+                                    </div>
+                                </div>
+                            </li>
+                            
+                            <li><a href="#Quick" class="cc q" onclick="drop(this)">Quick Links <span class="down-arrow q">&#8250;</span></a>
+                                <div class="q drop-box shadow cc drop-margin d-none window2-show-hide simple-drop" style="z-index: 1;">
+                                    <a class="q" href="#">Calender</a>                    
+                                    <a class="q" href="#">Gallery</a>                            
+                                    <a class="q" href="#">Committee</a>                            
+                                    <a class="q" href="#">Staff</a>                            
+                                    <a class="q" href="#">Careers</a>                            
+                                </div>
+                            </li>
+                            <li><a href="#Admissions" class="cc a" onclick="drop(this)">Admissions <span class="down-arrow">&#8250;</span></a>                        
+                                <div class="a drop-box shadow cc drop-margin simple-drop d-none window3-show-hide" style="z-index: 1;">
+                                    <a class="a" href="#">Online Admission</a>                    
+                                </div>
+                            </li>
+                            <li><a href="#Exams" class="cc e" onclick="drop(this)">Exams <span class="down-arrow">&#8250;</span></a>
+                                <!-- drop box -->
+                                <div class="e drop-box shadow cc drop-margin simple-drop d-none window4-show-hide" style="z-index: 1;">
+                                    <a class="e" href="#">Routine</a>                    
+                                    <a class="e" href="#">Results</a>                    
+                                </div>
+                            </li>
+                            <li><a onclick="color(this)" href="#Alumni">Alumni</a></li>
+                            <li><a onclick="color(this)" href="#Downloads">Downloads</a></li>
+                            <li><a href="#class" class="black-body">Sign In</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- end navbar -->
+            </div>
+            <!-- end header -->
+            <!-- navbar responsive mode -->
+            <div class="nav-res-mode U-pad">
+                <!-- sign in section  -->
+                <section>
+                <ul>
+                    <li><a href="#" class="black-body">Sign In</a></li>
+                </ul>
+                </section>
+                <!-- toggle section  -->
+                <section>
+                    <div class="cc">
+                        <i class="bi bi-filter-square toggle-icon" onclick="opens(this)"></i>
+                        <i class="bi bi-x-square toggle-icon" style="display: none;" onclick="closes(this)"></i>
+                    </div>
+                </section>
+            </div>
+            <!-- end of navbar responsive mode -->
+            <!-- start slider and notice board section -->
+            <div class="U-pad slider_notice-board">
+                <!-- slider section start -->        
+                <section class="slider-section" data-aos="zoom-in">
+                    <div class="slideshow-container shadow">                        
+                        <div class="mySlides">                                
+                            <img src="https://www.synodhss.in/wp-content/uploads/2019/07/Science-and-Energy.jpg">
+                            <main>
+                                <section>
+                                    <h1 class="header-s-presentation-" style="font-size: 20px;">Annual Teacher's Day</h1>
+                                    <small class="paragraph-xs-presentation-">Wednesday, October 5</small>
+                                </section>
+                                <section>                                                                
+                                    <p class="label-xs-presentation- light-small-t">
+                                    </p>
+                                </section>
+                            </main>
+                        </div>            
+                        <div class="mySlides">
+                            <img src="./IMG/vasily-koloda-8CqDvPuo_kI-unsplash-min.jpg">
+                            <main style="padding: 2rem 3rem 3rem; text-align: justify;">
+                                <section>
+                                    <h1 class="header-s-presentation-" style="font-size: 20px;">School Ceremonial</h1>
+                                    <small class="paragraph-xs-presentation-">Monday, October 5</small>
+                                </section>
+                                <section>
+                                    <p class="label-xs-presentation- light-small-t">
+                                    </p>
+                                </section>
+                            </main>
+                        </div>            
+                        <div class="mySlides">
+                            <img src="https://www.globaltimes.cn/Portals/0/attachment/2021/2021-09-15/8d3fd2c3-033d-4b3f-9970-97656e5d5283.jpg">
+                            <main style="padding: 2rem 3rem 3rem; text-align: justify;">
+                                <section>
+                                    <h1 class="header-s-presentation-" style="font-size: 20px;">Cultural Ceremony</h1>
+                                    <small class="paragraph-xs-presentation-">Sunday, October 5</small>
+                                </section>
+                                <section>
+                                    <p class="label-xs-presentation- light-small-t">
+                                    </p>
+                                </section>
+                            </main>
+                        </div>            
+                        <div class="mySlides">
+                            <img src="https://www.fishergateschool.com/wp-content/uploads/2014/07/DSC05561.jpg">
+                            <main style="padding: 2rem 3rem 3rem; text-align: justify;">
+                                <section>
+                                    <h1 class="header-s-presentation-" style="font-size: 20px;">Sports Day</h1>
+                                    <small class="paragraph-xs-presentation-">Friday, October 5</small>
+                                </section>
+                                <section>
+                                    <p class="label-xs-presentation- light-small-t">
+                                    </p>
+                                </section>
+                            </main>
+                        </div>            
+                        <div class="mySlides">
+                            <img src="http://groundup.org.za/sites/default/files/styles/article_image/public/field/image/EEMarch31Oct-0.jpg?itok=S0teeT6k">
+                            <main style="padding: 2rem 3rem 3rem; text-align: justify;">
+                                <section>
+                                    <h1 class="header-s-presentation-" style="font-size: 20px;">Some Special Day</h1>
+                                    <small class="paragraph-xs-presentation-">Saturday, October 5</small>
+                                </section>
+                                <section>
+                                    <p class="label-xs-presentation- light-small-t">
+                                    </p>
+                                </section>
+                            </main>
+                        </div>            
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>                        
+                        <div style="bottom: -8%; position: absolute; z-index: -100; right: -35px;">
+                            <img src="./IMG/dots.jpeg" style=" width: 81px; opacity: .5;">
+                        </div>                    
+                    </div>
+                    <br>                            
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span> 
+                        <span class="dot" onclick="currentSlide(2)"></span> 
+                        <span class="dot" onclick="currentSlide(3)"></span> 
+                        <span class="dot" onclick="currentSlide(4)"></span> 
+                        <span class="dot" onclick="currentSlide(5)"></span> 
+                    </div>                    
+                </section>
+                <!-- notice board section -->
+                <section class="notice-board">
+                    <div class="shadow notice-box" data-aos="zoom-in">
+                        <p class="cc label-xs-presentation-" style="margin-bottom: 2rem;">Notices</p>
+                        <!-- notice item -->
+                        <div>
+                            <!-- first section -->
+                            <section style="display: flex; justify-content: space-between; ">
+                                <!-- date section  -->
+                                <section class="date-section">
+                                    <div class="cc">
+                                        <p class="cc">
+                                            13th <br> July
+                                        </p>
+                                    </div>
+                                </section>
+                                <!-- content section -->
+                                <section class="cc small-para">
+                                    <p>General guidelines to follow in school library.</p>
+                                </section>
+                            </section>
+                            <!-- line section -->
+                            <span class="horizontal-line"></span>
+                            <!-- sec section -->
+                            <section style="display: flex; justify-content: space-between; ">
+                                <!-- date section  -->
+                                <section class="date-section">
+                                    <div class="cc">
+                                        <p class="cc">
+                                            13th <br> July
+                                        </p>
+                                    </div>
+                                </section>
+                                <!-- content section -->
+                                <section class="cc small-para">
+                                    <p>General guidelines to follow in school library.</p>
+                                </section>
+                            </section>
+                            <!-- line2 section -->
+                            <span class="horizontal-line"></span>
+                            <!-- third section -->
+                            <section style="display: flex; justify-content: space-between; ">
+                                <!-- date section  -->
+                                <section class="date-section">
+                                    <div class="cc">
+                                        <p class="cc">
+                                            13th <br> July
+                                        </p>
+                                    </div>
+                                </section>
+                                <!-- content section -->
+                                <section class="cc small-para">
+                                    <p>General guidelines to follow in school library.</p>
+                                </section>
+                            </section>
+                            <!-- line3 section -->
+                            <span class="horizontal-line"></span>
+                            <!-- fourth section -->
+                            <section style="display: flex; justify-content: space-between; ">
+                                <!-- date section  -->
+                                <section class="date-section">
+                                    <div class="cc">
+                                        <p class="cc">
+                                            13th <br> July
+                                        </p>
+                                    </div>
+                                </section>
+                                <!-- content section -->
+                                <section class="cc small-para">
+                                    <p>General guidelines to follow in school library.</p>
+                                </section>
+                            </section>
+                            <!-- line4 section -->
+                            <span class="horizontal-line"></span>
+                        </div>
+                        <p class="cc viewAll">View All <span class="right-arrow"> &#8250;</span></p>
+                    </div>
+                </section>
+            </div>
+            <!-- end slider and notice board section -->
+            <!-- scroll btn -->
+            
+            <a class="scroll-down cc" onclick="down(this)" style="position: absolute;"><i class="bi bi-arrow-down-square-fill"></i></a>
+        </div><!-- end of dev with class 100vh  -->
+        <!-- sec div  -->
+        <div class="min-100vh m-top U-pad sec-div tb-pad" style="position: relative;">
+            <div class="cc"><p class="t-red header-s-presentation- m-red-header">News</p></div>
+            <div><p class="label-m-presentation-">Latest News</p></div>
+            <!-- box section -->
+            <div>
+                <section class="cc news-boxeses">
+                    <section class="news-box" data-aos="slide-up">
+                        <!-- img section -->
+                        <section>
+                            <div>
+                                <img class="news-img" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/cd8ab8d2-9654-4c12-bc78-548eeb25b25c/d5knzgx-7c7d3468-380a-436a-a3c8-1147d8f737e5.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2NkOGFiOGQyLTk2NTQtNGMxMi1iYzc4LTU0OGVlYjI1YjI1Y1wvZDVrbnpneC03YzdkMzQ2OC0zODBhLTQzNmEtYTNjOC0xMTQ3ZDhmNzM3ZTUuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.U3QCComl8vHN2MAYKH5WQ_pQoVY8S0cT0bETpcerZxE">
+                            </div>
+                        </section>
+                        <!-- content section -->
+                        <section>
+                            <div class="normal-m">
+                                <small class="paragraph-xs-presentation-"><span class="m-r">08-11-2022 </span><span>Category</span></small>
+                            </div>
+                            <div class="normal-m">
+                                <h3 class="f-16">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi itaque unde quam.</h3>
+                            </div>
+                            <div class="normal-m">
+                                <p class="label-xs-presentation- light-small-t">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores suscipit molestias necessitatibus at est exercitationem. Lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </section>
+                    </section>
+                    <section class="news-box" data-aos="slide-up">
+                        <!-- img section -->
+                        <section>
+                            <div>
+                                <img class="news-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ91uRte5HrjL910ogR9Jg8n1gbvL-vOy05HDeYZYhfGiZjDWUipUcfSE9kpLOnGK0n9_c&usqp=CAU">
+                            </div>
+                        </section>
+                        <!-- content section -->
+                        <section>
+                            <div class="normal-m">
+                                <small class="paragraph-xs-presentation-"><span class="m-r">08-11-2022 </span><span>Category</span></small>
+                            </div>
+                            <div class="normal-m">
+                                <h3 class="f-16">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi itaque unde quam.</h3>
+                            </div>
+                            <div class="normal-m">
+                                <p class="label-xs-presentation- light-small-t">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores suscipit molestias necessitatibus at est exercitationem. Lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </section>
+                    </section>
+                    <!-- right vertical line news box section -->
+                    <section class="right-news-sec" style="display: flex; flex-direction: column; justify-content: space-between;"  data-aos="slide-left">
+                        <!-- img and content section -->
+                        <section class="cc" style="align-items: stretch;">
+                            <!-- img section -->
+                            <div>
+                                <img class="sm-img" src="data:image/jpeg;base64,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">
+                            </div>
+                            <!-- content section -->
+                            <div class="news-content-sec">
+                                <div >
+                                    <!-- <small class="" style="display: flex; justify-content: space-between;" class="paragraph-xs-presentation-"> -->
+                                    <small class="paragraph-xs-presentation-">
+                                        <span class="m-r">08-11-2022 </span>
+                                        <span>Category</span>
+                                    </small>
+                                </div>
+                                <div>
+                                    <p class="news-small-para-text">Partiality on or continuing in particular principles</p>
+                                </div>
+                            </div>
+                        </section>                            
+                        <!-- line section -->
+                        <section>
+                            <span class="horizontal-line"></span>
+                        </section>
+                        <!-- img and content section -->
+                        <section class="cc" style="align-items: stretch;">
+                            <!-- img section -->
+                            <div>
+                                <img class="sm-img" src="data:image/jpeg;base64,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">
+                            </div>
+                            <!-- content section -->
+                            <div class="news-content-sec">
+                                <div >
+                                    <!-- <small class="" style="display: flex; justify-content: space-between;" class="paragraph-xs-presentation-"> -->
+                                    <small class="paragraph-xs-presentation-">
+                                        <span class="m-r">08-11-2022 </span>
+                                        <span>Category</span>
+                                    </small>
+                                </div>
+                                <div>
+                                    <p class="news-small-para-text">Partiality on or continuing in particular principles</p>
+                                </div>
+                            </div>
+                        </section>                            
+                        <!-- line section -->
+                        <section>
+                            <span class="horizontal-line"></span>
+                        </section>
+                        <!-- img and content section -->
+                        <section class="cc" style="align-items: stretch;">
+                            <!-- img section -->
+                            <div>
+                                <img class="sm-img" src="data:image/jpeg;base64,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">
+                            </div>
+                            <!-- content section -->
+                            <div class="news-content-sec">
+                                <div >
+                                    <!-- <small class="" style="display: flex; justify-content: space-between;" class="paragraph-xs-presentation-"> -->
+                                    <small class="paragraph-xs-presentation-">
+                                        <span class="m-r">08-11-2022 </span>
+                                        <span>Category</span>
+                                    </small>
+                                </div>
+                                <div>
+                                    <p class="news-small-para-text">Partiality on or continuing in particular principles</p>
+                                </div>
+                            </div>
+                        </section>                            
+                        <!-- line section -->
+                        <section>
+                            <span class="horizontal-line"></span>
+                        </section>
+                        <!-- img and content section -->
+                        <section class="cc" style="align-items: stretch;">
+                            <!-- img section -->
+                            <div>
+                                <img class="sm-img" src="data:image/jpeg;base64,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">
+                            </div>
+                            <!-- content section -->
+                            <div class="news-content-sec">
+                                <div >
+                                    <!-- <small class="" style="display: flex; justify-content: space-between;" class="paragraph-xs-presentation-"> -->
+                                    <small class="paragraph-xs-presentation-">
+                                        <span class="m-r">08-11-2022 </span>
+                                        <span>Category</span>
+                                    </small>
+                                </div>
+                                <div>
+                                    <p class="news-small-para-text">Partiality on or continuing in particular principles</p>
+                                </div>
+                            </div>
+                        </section>                            
+                        <!-- line section -->
+                        <section>
+                            <span class="horizontal-line"></span>
+                        </section>
+                     
+                    </section>
+                </section>                
+            </div>
+            <!-- view all btn -->
+            <div class="cc m-top">
+                <button type="button" class="btn">View All</button>
+            </div>
+            
+            <a class="scroll-down cc" onclick="down(this)" style="position: absolute;"><i class="bi bi-arrow-down-square-fill"></i></a>
+        </div>
+        <!-- third dev -->
+        <div class="min-100vh m-top U-pad tb-pad third-div" style="position: relative;">
+            <div class="cc">
+                <p class="t-red header-s-presentation- m-red-header">About Us</p>
+            </div>
+            <div class="cc about-col">
+                <!-- about us content -->
+                <div style="width: 300px;" data-aos="slide-right">
+                    <div>
+                        <p class="label-m-presentation-">About Us</p>
+                    </div>
+                    <div class="normal-m">
+                        <p class="label-xs-presentation- light-small-t">this is how we can solve the question in the coming futur of the world of the day and night. ia ma a good boy Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores suscipit molestias necessitatibus at est exercitationem. Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <div class="m-top">
+                        <button type="button" class="btn" style="background-color: #A0D334;">More Info</button>
+                    </div>
+                </div>
+                <!-- about us boxeses -->
+                <div class="aboutuss-box">
+                    <div class="cc">
+                        <section class="shadow aboutus-box m-r" data-aos="slide-up">
+                            <div style="padding-right: 2rem;">
+                                <i class="bi bi-bank2" style="font-size: 30px;"></i>
+                            </div>
+                            <div>
+                                <div class="normal-m">
+                                    <h3 class="f-16">Mission Statement</h3>
+                                </div>
+                                <div class="normal-m">
+                                    <p class="label-xs-presentation- light-small-t"></p>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="shadow aboutus-box" data-aos="slide-up">
+                            <div style="padding-right: 2rem;">
+                                <i class="bi bi-bank2" style="font-size: 30px;"></i>
+                            </div>
+                            <div>
+                                <div class="normal-m">
+                                    <h3 class="f-16">Goals</h3>
+                                </div>
+                                <div class="normal-m">
+                                    <p class="label-xs-presentation- light-small-t"></p>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="cc m-top">
+                        <section class="shadow aboutus-box m-r" data-aos="slide-up">
+                            <div style="padding-right: 2rem;">
+                                <i class="bi bi-bank2" style="font-size: 30px;"></i>
+                            </div>
+                            <div>
+                                <div class="normal-m">
+                                    <h3 class="f-16">Mission Statement</h3>
+                                </div>
+                                <div class="normal-m">
+                                    <p class="label-xs-presentation- light-small-t"></p>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="shadow aboutus-box" data-aos="slide-up">
+                            <div style="padding-right: 2rem;">
+                                <i class="bi bi-bank2" style="font-size: 30px;"></i>
+                            </div>
+                            <div>
+                                <div class="normal-m">
+                                    <h3 class="f-16">Mission Statement</h3>
+                                </div>
+                                <div class="normal-m">
+                                    <p class="label-xs-presentation- light-small-t"></p>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            
+            <a class="scroll-down cc" onclick="down(this)" style="position: absolute;"><i class="bi bi-arrow-down-square-fill"></i></a>
+        </div>
+        <!-- fourth testimonial section section -->
+        <div class="min-100vh m-top U-pad tb-pd fourth-div" style="display: flex; flex-direction: column; justify-content: center; position: relative;">            
+            <div class="cc" style="flex-direction: column; margin-bottom: 6rem;">
+                <p class="t-red header-s-presentation- m-red-header" style="margin-bottom: 1rem;">Testimonials</p>
+                <p class="label-xs-presentation- light-small-t">What our student say</p>
+            </div>
+            <!-- collection of std img content msg -->
+            <div>
+                <!-- image and content -->
+                <div class="testimonial-img-cont" style="position: relative;">
+                    <section class="cc d-none">
+                        <!-- img-section -->
+                        <section class="m-r" data-aos="slide-right">
+                            <div>
+                                <img class="testimonial-img" src="https://thumbs.dreamstime.com/b/happy-indian-student-wearing-eyeglasses-holding-notebooks-showing-thumbs-up-education-concept-portrait-smiling-female-sign-214751456.jpg">
+                            </div>
+                        </section>
+                        <!-- content section  -->
+                        <section class="t-content" data-aos="slide-left">
+                            <div class="normal-m">
+                                <p class="label-xs-presentation- light-small-t" style="text-align: justify;">"Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official in deserunt mollit anim idest sint laborum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, porro! "</p>
+                            </div>
+                            <div>
+                                <span class="horizontal-line" style="background-color: orangered; width: 100px;"></span>
+                            </div>
+                            <div>
+                                <h1 class="header-s-presentation-" style="font-size: 20px;">Sanskriti Dahal</h1>
+                                <small class="paragraph-xs-presentation-">Student</small>
+                            </div>
+
+                        </section> 
+                    </section>
+                    <section class="cc d-none">
+                        <!-- img-section -->
+                        <section class="m-r" data-aos="slide-right">
+                            <div>
+                                <img class="testimonial-img" src="https://www.baycollege.edu/_resources/images/student-life/bay-perks/smiling-female-college-student-holding-books.jpg">
+                            </div>
+                        </section>
+                        <!-- content section  -->
+                        <section class="t-content" data-aos="slide-left">
+                            <div class="normal-m">
+                                <p class="label-xs-presentation- light-small-t" style="text-align: justify;">"Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official in deserunt mollit anim idest sint laborum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, porro! "</p>
+                            </div>
+                            <div>
+                                <span class="horizontal-line" style="background-color: orangered; width: 100px;"></span>
+                            </div>
+                            <div>
+                                <h1 class="header-s-presentation-" style="font-size: 20px;">Aakriti Rai</h1>
+                                <small class="paragraph-xs-presentation-">Student</small>
+                            </div>
+
+                        </section> 
+                    </section>
+                    <section class="cc d-none">
+                        <!-- img-section -->
+                        <section class="m-r" data-aos="slide-right">
+                            <div>
+                                <img class="testimonial-img" src="https://st2.depositphotos.com/3889193/6856/i/600/depositphotos_68564721-stock-photo-beautiful-young-student-posing.jpg">
+                            </div>
+                        </section>
+                        <!-- content section  -->
+                        <section class="t-content" data-aos="slide-left">
+                            <div class="normal-m">
+                                <p class="label-xs-presentation- light-small-t" style="text-align: justify;">"Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official in deserunt mollit anim idest sint laborum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, porro! "</p>
+                            </div>
+                            <div>
+                                <span class="horizontal-line" style="background-color: orangered; width: 100px;"></span>
+                            </div>
+                            <div>
+                                <h1 class="header-s-presentation-" style="font-size: 20px;">Ranjita Rajbanshi</h1>
+                                <small class="paragraph-xs-presentation-">Student</small>
+                            </div>
+
+                        </section> 
+                    </section>
+                    <section class="cc d-none">
+                        <!-- img-section -->
+                        <section class="m-r" data-aos="slide-right">
+                            <div>
+                                <img class="testimonial-img" src="https://thumbs.dreamstime.com/b/happy-indian-student-wearing-eyeglasses-holding-notebooks-showing-thumbs-up-education-concept-portrait-smiling-female-sign-214751456.jpg">
+                            </div>
+                        </section>
+                        <!-- content section  -->
+                        <section class="t-content" data-aos="slide-left">
+                            <div class="normal-m">
+                                <p class="label-xs-presentation- light-small-t" style="text-align: justify;">"Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official in deserunt mollit anim idest sint laborum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, porro! "</p>
+                            </div>
+                            <div>
+                                <span class="horizontal-line" style="background-color: orangered; width: 100px;"></span>
+                            </div>
+                            <div>
+                                <h1 class="header-s-presentation-" style="font-size: 20px;">Aashansha Shrestha</h1>
+                                <small class="paragraph-xs-presentation-">Profesor</small>
+                            </div>
+
+                        </section> 
+                    </section>
+                    <section class="cc d-none">
+                        <!-- img-section -->
+                        <section class="m-r" data-aos="slide-right">
+                            <div>
+                                <img class="testimonial-img" src="https://st2.depositphotos.com/4431055/11856/i/600/depositphotos_118567546-stock-photo-young-female-college-student.jpg">
+                            </div>
+                        </section>
+                        <!-- content section  -->
+                        <section class="t-content" data-aos="slide-left">
+                            <div class="normal-m">
+                                <p class="label-xs-presentation- light-small-t" style="text-align: justify;">"Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official in deserunt mollit anim idest sint laborum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, porro! "</p>
+                            </div>
+                            <div>
+                                <span class="horizontal-line" style="background-color: orangered; width: 100px;"></span>
+                            </div>
+                            <div>
+                                <h1 class="header-s-presentation-" style="font-size: 20px;">Dimple shanker</h1>
+                                <small class="paragraph-xs-presentation-">Teacher</small>
+                            </div>
+
+                        </section> 
+                    </section>
+                    <!-- btn section  -->
+                    <div  data-aos="slide-up">
+                        <a class="t-prev" onclick="testimonial(-1)">&#10094;</a>
+                        <a class="t-next" onclick="testimonial(1)">&#10095;</a>                
+                    </div>
+                </div>
+            </div>
+            
+            <a class="scroll-down cc" onclick="down(this)" style="position: absolute;"><i class="bi bi-arrow-down-square-fill"></i></a>
+        </div>
+        <!-- fivth section -->
+        <div class="min-100vh U-pad cc fivth-section" style="position: relative;">
+            <!-- logo section  -->
+            <section data-aos="slide-right">
+                <div>
+                    <img width="300px" src="./IMG/crystal-logo.jpeg">
+                </div>
+            </section>
+            <!-- download section -->
+            <section data-aos="slide-left">
+                <!-- content-section -->
+                <section class="cc" style="flex-direction: column;">
+                    <p class="label-xs-presentation- light-small-t" style="color: rgba(255, 0, 0, 0.616);">CRYSTAL EDUCATION ERP</p>
+                    <p style="text-align: center;" class="label-m-presentation-" style="margin-bottom: 1rem;">Download our app and start exploring!</p>
+                    <p style="text-align: center;" class="label-xs-presentation- light-small-t">School Information and ERP solution in a single Mobile App</p>
+                    
+                </section>
+                <!-- img section -->
+                <section class="cc">
+                    <!-- google logo -->
+                    <div class="m-r m-top">
+                        <img width="150px" src="./IMG/google-play.png">
+                    </div>
+                    <!-- app store -->
+                    <div class="m-top">
+                        <img width="150px" src="./IMG/apple.png">
+                    </div>
+                </section>
+            </section>
+            
+            <a class="scroll-down cc" onclick="down(this)" style="position: absolute;"><i class="bi bi-arrow-down-square-fill"></i></a>
+        </div>
+        <!-- last section i.e footer section -->
+        <div class="min-100vh">
+            <footer class="f-footer U-pad tb-pad">
+                <section>
+                    <!-- left div -->
+                    <div style="width: 400px;" class="ft-center">
+                        <p class="header-s-presentation-" style="color: white; margin-bottom: 1rem;">Contact Us!</p>
+                        <p class="f-16">There are many variations of Lorem Ipsum but the majority have suffered alteration.</p>                      
+                    </div>
+                    <!-- right-div -->
+                    <div class="cc" style="position: relative;">
+                        <input placeholder="Email here" type="email" class="email-input">
+                        <a href="#" class="email-btn">Send</a>
+                    </div>
+                </section>
+            </footer>
+            <footer class="s-footer U-pad tb-pad">
+                <div>
+                    <section class="cc">
+                        <img class="logo" style="width: 50px; margin-right: 2rem;" src="./IMG/WhatsApp Image 2022-09-27 at 9.07.47 AM (1).jpeg" alt="logo">
+                        <h1 class="footer-h1">Nepal Collage Of Management</h1>
+                    </section>         
+                    <!-- icon section -->
+                    <section class="social-media-section">
+                        <h5 class="y-text">Social Media</h5>
+                        <div style="font-size: 2.5rem;
+                        width: 169px;
+                        display: flex;
+                        justify-content: space-between; padding-top: 1rem;">
+                            <i class="bi bi-facebook"></i>
+                            <i class="bi bi-instagram"></i>
+                            <i class="bi bi-linkedin"></i>
+                            <i class="bi bi-whatsapp"></i>
+                        </div>
+                    </section>
+                </div>                    
+                <div>
+                    <section>
+                        <h5 class="y-text">Nepal Collage Of Management</h5>
+                        <div class="footer-content">
+                            <p>56700 Gangalal Marga Tinlune <br>Dharan-8 <br>Sunsari, Nepal</p>
+                            <p>TEL:025-520120</p>
+                            <p>FAX:025-520405</p>
+                            <P>Email: ioepcd@ioepc.edu.np</P>
+                            <P>Email: ioepcd@ioe.edu.np</P>
+                        </div>
+                    </section>
+                    <section>
+                        <h5 class="y-text">Information</h5>
+                        <div class="footer-content">
+                            <p>Academic Calender</p>
+                            <p>Campus Map</p>
+                            <p>FacultyStaff Directory</p>
+                            <p>Direction</p>
+                            <p>Contact Us</p>
+                        </div>
+                    </section>
+                    <section>
+                        <h5 class="y-text">Useful Links</h5>
+                        <div class="footer-content">
+
+                            <p>Home</p>
+                            <p>Tribhuwan University</p>
+                            <p>Syllabus</p>
+                            <p>Downloads</p>
+                            <p>Career</p>
+                        </div>
+                    </section>
+                </div>
+            </footer>
+            <footer class="U-pad last-footer">
+                <p>Privacy | Terms and Conditions</p>
+            </footer>
+        </div>
+        <!-- svg section  -->
+        <div class="circle-svg"></div>        
+    </div><!-- container-xxl close  -->
+    <!-- aos data  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>
